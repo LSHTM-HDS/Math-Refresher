@@ -148,6 +148,73 @@
   </a>
  </li>
 </ul>
+<p class="caption">
+ <span class="caption-text">
+  Quizzes
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz1.html">
+   Quiz 1: Powers and logs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz2.html">
+   Quiz 2: Differentiation and integration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz3.html">
+   Quiz 3: Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz4.html">
+   Quiz 4: Combinatorics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz5.html">
+   Quiz 5: Probability
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz6.html">
+   Quiz 6: Probability theorems
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz7.html">
+   Quiz 7: Discrete Random Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz8.html">
+   Quiz 8: Continuous Random Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz9.html">
+   Quiz 9: Correlation and covariance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz10.html">
+   Quiz 10: More complex questions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Solutions.html">
+   Solution to quizzes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mr_reading.html">
+   Further material
+  </a>
+ </li>
+</ul>
 
     </div>
 </nav> <!-- To handle the deprecated key -->
@@ -336,24 +403,20 @@ P(\mbox{roll a six}) = \lim_{n \rightarrow \infty} \frac{\mbox{number of 6s in} 
 <p>The plot below shows the relative frequency of 6s when a die is rolled repeatedly. The first roll was not a 6, and so the relative frequency is zero. The second roll was a 6, so the relative frequency is 0.5. As we then roll the die further, the relative frequency fluctuates. But from the figure we see that as the number of rolls increases, the relative frequency converges to 1/6.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
-<span class="n">roll</span> <span class="o">&lt;-</span><span class="n">sample</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span><span class="mi">1000</span><span class="p">,</span><span class="n">replace</span><span class="o">=</span><span class="n">T</span><span class="p">)</span>
-<span class="n">n</span> <span class="o">&lt;-</span> <span class="n">seq_along</span><span class="p">(</span><span class="n">roll</span><span class="p">)</span>
-<span class="n">d</span> <span class="o">&lt;-</span> <span class="n">cumsum</span><span class="p">(</span><span class="n">roll</span><span class="o">==</span><span class="mi">6</span><span class="p">)</span><span class="o">/</span><span class="n">n</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">set.seed</span><span class="p">(</span><span class="m">123</span><span class="p">)</span>
+<span class="n">roll</span> <span class="o">&lt;-</span><span class="nf">sample</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">6</span><span class="p">,</span><span class="m">1000</span><span class="p">,</span><span class="n">replace</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">&lt;-</span> <span class="nf">seq_along</span><span class="p">(</span><span class="n">roll</span><span class="p">)</span>
+<span class="n">d</span> <span class="o">&lt;-</span> <span class="nf">cumsum</span><span class="p">(</span><span class="n">roll</span><span class="o">==</span><span class="m">6</span><span class="p">)</span><span class="o">/</span><span class="n">n</span>
  
-<span class="n">plot</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> 
-  <span class="n">xlab</span><span class="o">=</span><span class="s2">&quot;Number of rolls&quot;</span><span class="p">,</span> <span class="n">ylab</span><span class="o">=</span><span class="s2">&quot;Relative frequency of 6s&quot;</span><span class="p">,</span>
-  <span class="n">xlim</span><span class="o">=</span><span class="n">c</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">),</span> <span class="n">ylim</span><span class="o">=</span><span class="n">c</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> 
+<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.height</span><span class="o">=</span><span class="m">5</span><span class="p">,</span> <span class="n">repr.plot.width</span><span class="o">=</span><span class="m">5</span><span class="p">)</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> 
+  <span class="n">xlab</span><span class="o">=</span><span class="s">&quot;Number of rolls&quot;</span><span class="p">,</span> <span class="n">ylab</span><span class="o">=</span><span class="s">&quot;Relative frequency of 6s&quot;</span><span class="p">,</span>
+  <span class="n">xlim</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1000</span><span class="p">),</span> <span class="n">ylim</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">))</span> 
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-0a9dedff2e73&gt;&quot;</span><span class="gt">, line </span><span class="mi">2</span>
-    <span class="n">roll</span> <span class="o">&lt;-</span><span class="n">sample</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span><span class="mi">1000</span><span class="p">,</span><span class="n">replace</span><span class="o">=</span><span class="n">T</span><span class="p">)</span>
-                   <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
+<img alt="_images/pr1_probability_2_0.png" src="_images/pr1_probability_2_0.png" />
 </div>
 </div>
 <p>Probability is crucial to medical statistics. For example:</p>
@@ -523,16 +586,16 @@ P(A_{1} \cap A_{2}) = P(A_{1}) \times P(A_{2}).
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "r"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "ir",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'ir'</script>
 
               </div>
               

@@ -53,6 +53,7 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Quiz 1: Powers and logs" href="Quiz1.html" />
     <link rel="prev" title="Correlation and covariance" href="pr5_correlation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -144,6 +145,73 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Distributions
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Quizzes
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz1.html">
+   Quiz 1: Powers and logs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz2.html">
+   Quiz 2: Differentiation and integration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz3.html">
+   Quiz 3: Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz4.html">
+   Quiz 4: Combinatorics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz5.html">
+   Quiz 5: Probability
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz6.html">
+   Quiz 6: Probability theorems
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz7.html">
+   Quiz 7: Discrete Random Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz8.html">
+   Quiz 8: Continuous Random Variables
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz9.html">
+   Quiz 9: Correlation and covariance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Quiz10.html">
+   Quiz 10: More complex questions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Solutions.html">
+   Solution to quizzes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mr_reading.html">
+   Further material
   </a>
  </li>
 </ul>
@@ -376,10 +444,10 @@ X \sim Bernoulli(\pi),
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><ol class=list-inline>
+	<li>0</li>
+	<li>0</li>
+	<li>0</li>
 	<li>1</li>
-	<li>0</li>
-	<li>0</li>
-	<li>0</li>
 	<li>1</li>
 	<li>1</li>
 </ol>
@@ -409,6 +477,7 @@ P(X=x) = \begin{pmatrix}n \\ x \end{pmatrix} \pi^{x} (1-\pi)^{n-x}, \ \ \mbox{fo
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">&lt;-</span> <span class="nf">rbinom</span><span class="p">(</span><span class="m">100</span><span class="p">,</span> <span class="m">10</span><span class="p">,</span> <span class="m">0.48</span><span class="p">)</span>
 <span class="nf">head</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.height</span><span class="o">=</span><span class="m">5</span><span class="p">,</span> <span class="n">repr.plot.width</span><span class="o">=</span><span class="m">5</span><span class="p">)</span>
 <span class="nf">hist</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="nf">mean</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="nf">var</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
@@ -417,14 +486,14 @@ P(X=x) = \begin{pmatrix}n \\ x \end{pmatrix} \pi^{x} (1-\pi)^{n-x}, \ \ \mbox{fo
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><ol class=list-inline>
-	<li>7</li>
-	<li>5</li>
-	<li>7</li>
+	<li>3</li>
+	<li>4</li>
 	<li>2</li>
 	<li>5</li>
-	<li>3</li>
+	<li>4</li>
+	<li>5</li>
 </ol>
-</div><div class="output text_html">4.89</div><div class="output text_html">2.8059595959596</div><img alt="_images/pr6_distributions_9_3.png" src="_images/pr6_distributions_9_3.png" />
+</div><div class="output text_html">4.52</div><div class="output text_html">2.29252525252525</div><img alt="_images/pr6_distributions_9_3.png" src="_images/pr6_distributions_9_3.png" />
 </div>
 </div>
 </div>
@@ -463,6 +532,7 @@ P(X=x) = \frac{\mu^{x}}{x!} e^{-\mu}, \ \ \mbox{ for } \ \ x=0,1,2,...
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">&lt;-</span> <span class="nf">rpois</span><span class="p">(</span><span class="m">100</span><span class="p">,</span> <span class="m">3</span><span class="p">)</span>
 <span class="nf">head</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.height</span><span class="o">=</span><span class="m">5</span><span class="p">,</span> <span class="n">repr.plot.width</span><span class="o">=</span><span class="m">5</span><span class="p">)</span>
 <span class="nf">hist</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="nf">mean</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="nf">var</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
@@ -471,14 +541,14 @@ P(X=x) = \frac{\mu^{x}}{x!} e^{-\mu}, \ \ \mbox{ for } \ \ x=0,1,2,...
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><ol class=list-inline>
-	<li>4</li>
-	<li>5</li>
-	<li>3</li>
-	<li>2</li>
 	<li>1</li>
-	<li>3</li>
+	<li>1</li>
+	<li>2</li>
+	<li>4</li>
+	<li>1</li>
+	<li>4</li>
 </ol>
-</div><div class="output text_html">2.98</div><div class="output text_html">2.78747474747475</div><img alt="_images/pr6_distributions_12_3.png" src="_images/pr6_distributions_12_3.png" />
+</div><div class="output text_html">3.28</div><div class="output text_html">2.99151515151515</div><img alt="_images/pr6_distributions_12_3.png" src="_images/pr6_distributions_12_3.png" />
 </div>
 </div>
 </div>
@@ -526,6 +596,7 @@ f(x) = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x - \mu)^2}{2 \sigma^2}}
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">mu</span> <span class="o">&lt;-</span> <span class="m">13</span>
 <span class="n">sigma2</span> <span class="o">&lt;-</span> <span class="m">5</span>
 <span class="n">X</span> <span class="o">&lt;-</span> <span class="nf">rnorm</span><span class="p">(</span><span class="m">1000</span><span class="p">,</span> <span class="n">mu</span><span class="p">,</span> <span class="n">sigma2</span><span class="p">)</span>
+<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.height</span><span class="o">=</span><span class="m">5</span><span class="p">,</span> <span class="n">repr.plot.width</span><span class="o">=</span><span class="m">5</span><span class="p">)</span>
 <span class="nf">hist</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -576,6 +647,7 @@ f(x) =\lambda e^{-\lambda x} \ \ \mbox{for} \ \ x&gt;0
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">rate</span> <span class="o">&lt;-</span> <span class="m">30</span>
 <span class="n">X</span> <span class="o">&lt;-</span> <span class="nf">rexp</span><span class="p">(</span><span class="m">1000</span><span class="p">,</span> <span class="n">rate</span><span class="p">)</span>
+<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.height</span><span class="o">=</span><span class="m">5</span><span class="p">,</span> <span class="n">repr.plot.width</span><span class="o">=</span><span class="m">5</span><span class="p">)</span>
 <span class="nf">hist</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -602,6 +674,7 @@ T \sim t_\nu
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">&lt;-</span> <span class="m">18</span>
 <span class="bp">T</span> <span class="o">&lt;-</span> <span class="nf">rt</span><span class="p">(</span><span class="m">1000</span><span class="p">,</span> <span class="m">18</span><span class="p">)</span>
+<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.height</span><span class="o">=</span><span class="m">5</span><span class="p">,</span> <span class="n">repr.plot.width</span><span class="o">=</span><span class="m">5</span><span class="p">)</span>
 <span class="nf">hist</span><span class="p">(</span><span class="bp">T</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -635,6 +708,7 @@ Q \sim \chi^{2}_{n}
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">&lt;-</span> <span class="m">18</span>
 <span class="n">Q</span> <span class="o">&lt;-</span> <span class="nf">rchisq</span><span class="p">(</span><span class="m">1000</span><span class="p">,</span> <span class="m">18</span><span class="p">)</span>
+<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.height</span><span class="o">=</span><span class="m">5</span><span class="p">,</span> <span class="n">repr.plot.width</span><span class="o">=</span><span class="m">5</span><span class="p">)</span>
 <span class="nf">hist</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -661,6 +735,7 @@ F = \frac{U_{1}/n}{U_{2}/m}
 <span class="n">U1</span> <span class="o">&lt;-</span> <span class="nf">rchisq</span><span class="p">(</span><span class="m">1000</span><span class="p">,</span> <span class="n">df1</span><span class="p">)</span>
 <span class="n">U2</span> <span class="o">&lt;-</span> <span class="nf">rchisq</span><span class="p">(</span><span class="m">1000</span><span class="p">,</span> <span class="n">df2</span><span class="p">)</span>
 <span class="bp">F</span> <span class="o">&lt;-</span><span class="p">(</span><span class="n">U1</span><span class="o">/</span><span class="n">df1</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">U2</span><span class="o">/</span><span class="n">df2</span><span class="p">)</span>
+<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.height</span><span class="o">=</span><span class="m">5</span><span class="p">,</span> <span class="n">repr.plot.width</span><span class="o">=</span><span class="m">5</span><span class="p">)</span>
 <span class="nf">hist</span><span class="p">(</span><span class="bp">F</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -694,7 +769,7 @@ f(x) = \frac{1}{B(\alpha, \beta)} \ x^{\alpha - 1} (1 - x)^{\beta - 1}, \qquad \
 <span class="n">beta</span> <span class="o">&lt;-</span> <span class="m">2</span>
 
 <span class="n">X</span> <span class="o">&lt;-</span> <span class="nf">rbeta</span><span class="p">(</span><span class="m">1000</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">ncp</span> <span class="o">=</span> <span class="m">0</span><span class="p">)</span>
-
+<span class="nf">options</span><span class="p">(</span><span class="n">repr.plot.height</span><span class="o">=</span><span class="m">5</span><span class="p">,</span> <span class="n">repr.plot.width</span><span class="o">=</span><span class="m">5</span><span class="p">)</span>
 <span class="nf">hist</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -733,6 +808,7 @@ f(x) = \frac{1}{B(\alpha, \beta)} \ x^{\alpha - 1} (1 - x)^{\beta - 1}, \qquad \
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="pr5_correlation.html" title="previous page">Correlation and covariance</a>
+    <a class='right-next' id="next-link" href="Quiz1.html" title="next page">Quiz 1: Powers and logs</a>
 
         </div>
         

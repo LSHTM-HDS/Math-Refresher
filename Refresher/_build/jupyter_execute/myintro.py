@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Introduction
+# # Maths Refresher
 
 # This document contains a brief refresher on key mathematics and statistics topics. It is intended for the use of students taking the MSc in Health Data Science at the London School of Hygiene and Tropical Medicine.
 

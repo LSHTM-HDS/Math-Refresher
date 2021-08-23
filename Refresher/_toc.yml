@@ -4,12 +4,14 @@
 format: jb-book
 root: myintro
 parts:
-  - caption: Notes
+  - caption: Mathematics
     chapters:
     - file: mr1_functions
     - file: mr2_calculus
     - file: mr3_matrices
     - file: cm_combinatorics
+  - caption: Probability and statistics
+    chapters:
     - file: pr1_probability
     - file: pr2_theorems
     - file: pr3_variables
@@ -28,6 +30,9 @@ parts:
     - file: Quiz8
     - file: Quiz9
     - file: Quiz10
+  - caption: Solutions
+    chapters:
     - file: Solutions
+  - caption: Further resources
+    chapters:
     - file: mr_reading
-

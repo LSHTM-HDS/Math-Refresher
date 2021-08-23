@@ -128,6 +128,8 @@ display(qs10["Q10_6"])
 # 2. $\frac{1}{x^2 + 3x - 5} + c$
 # 3. $\frac{log(x^2 + 3x - 5)}{x^2 + 3x - 5} + c$
 # 4. $\frac{2x^3 + 3x}{x^2 + 3x - 5} + c$
+# 
+# Note that $c$ is the constant of integration. 
 
 # In[8]:
 
@@ -154,10 +156,10 @@ display(qs10["Q10_8"])
 # 
 # Choose the correct answer:
 # 
-# 1. $e^{3x} (x^3 + 2 x^2 + x)$
-# 2. $\frac{e^{3x}}{9}(x^2 + 2 x + \frac{1}{3})$
-# 3. $e^{3x} (x^2 + \frac{2}{3} x + \frac{2}{3})$
-# 4. $\frac{e^{3x}}{3}(x^2 + \frac{2}{3} x + \frac{2}{9})$
+# 1. $e^{3x} (x^3 + 2 x^2 + x) + c$
+# 2. $\frac{e^{3x}}{9}(x^2 -2 x + \frac{1}{3}) + c$
+# 3. $e^{3x} (x^2 + \frac{2}{3} x + \frac{2}{3}) + c$
+# 4. $\frac{e^{3x}}{3}(x^2 - \frac{2}{3} x + \frac{2}{9}) + c$
 
 # In[10]:
 
@@ -173,6 +175,8 @@ display(qs10["Q10_9"])
 # 2. $\frac{\alpha}{\alpha + 1}$
 # 3. $\frac{\alpha}{\alpha - 1}$
 # 4. $\frac{\alpha(1-\alpha)}{\alpha^2}$
+# 
+# Note there is no constant of integration. Why?
 
 # In[11]:
 

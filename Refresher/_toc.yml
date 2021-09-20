@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: myintro
+root: intro
 parts:
   - caption: Mathematics
     chapters:
@@ -33,6 +33,16 @@ parts:
   - caption: Solutions
     chapters:
     - file: Solutions
+    - file: Selected_worked_solutions1
+    - file: Selected_worked_solutions2
+    - file: Selected_worked_solutions3
+    - file: Selected_worked_solutions4
+    - file: Selected_worked_solutions5
+    - file: Selected_worked_solutions6
+    - file: Selected_worked_solutions7
+    - file: Selected_worked_solutions8
+    - file: Selected_worked_solutions9
+    - file: Selected_worked_solutions10
   - caption: Further resources
     chapters:
     - file: mr_reading

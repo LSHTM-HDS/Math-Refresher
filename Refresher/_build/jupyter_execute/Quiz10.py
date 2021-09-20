@@ -109,7 +109,7 @@ display(qs10["Q10_5"])
 # 
 # 1. $\frac{1}{1 + e^\theta}\left( 1 - \frac{1}{1 + e^\theta}\right)$
 # 2. $\frac{1}{1 + e^\theta}\times \frac{e^\theta}{1 + e^\theta}$
-# 3. $\frac{1}{1 + e^\theta}  - \frac{\theta e^\theta}{1 + e^\theta}$
+# 3. $\frac{1}{1 + e^\theta}  - \frac{\theta e^\theta}{(1 + e^\theta)^2}$
 # 4. $\frac{e^\theta}{1 + e^\theta}  - \frac{\theta e^\theta}{1 + e^\theta}$
 
 # In[7]:
@@ -246,7 +246,7 @@ display(qs10["Q10_13"])
 
 # **Question 14**: You will learn the theory behind this method later. For now, we will undertake the mechanics of the calculation. 
 # 
-# We have data $X_1, X_2, ...X_n$, where each $X_i \sim N(5, \sigma^2)$. 
+# We have observed data points $x_1, x_2, ..., x_n$, which are realisations from distributions $X_1, X_2, ...X_n$, where each $X_i \sim N(5, \sigma^2)$. 
 #     
 # We are going to find the maximum likelihood estimate for $\sigma^2$. During the calculations, keep everything in terms of $\sigma^2$, not $\sigma$. If you have problems doing this, you can always substitute $u=\sigma^2$, and substitute back at the end.
 # 
@@ -254,7 +254,7 @@ display(qs10["Q10_13"])
 # The likelihood for the data is:
 # 
 # $$
-# L(\sigma^2) = \prod_{i=1}^n \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x-5)^2}{2 \sigma^2}}
+# L(\sigma^2) = \prod_{i=1}^n \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x_i-5)^2}{2 \sigma^2}}
 # $$
 # 
 # Using the skills you have been re-learning in this book, your task is to find the value of $\sigma^2$ which maximises this likelihood. 
@@ -270,9 +270,9 @@ display(qs10["Q10_13"])
 # 
 # What is the maximum likelihood estimate for $\sigma^2$?
 # 
-# 1. $\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n \frac{(x - 5)}{\sqrt{2 \pi}}$
-# 2. $\hat{\sigma}^2 = \frac{1}{\sqrt{2 \pi n}}\sum_{i=1}^n (x - 5)^2$
-# 3. $\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n (x - 5)^2$
+# 1. $\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n \frac{(x_i - 5)}{\sqrt{2 \pi}}$
+# 2. $\hat{\sigma}^2 = \frac{1}{\sqrt{2 \pi n}}\sum_{i=1}^n (x_i - 5)^2$
+# 3. $\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n (x_i - 5)^2$
 # 4. $\hat{\sigma}^2 = (\bar{x} - 5)^2$
 # 
 

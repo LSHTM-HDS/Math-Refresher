@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# # Maths, Probability and Statistics Refresher
+
+# This document contains a brief refresher on key mathematics, probability and statistics topics. It is intended for the use of students taking the MSc in Health Data Science at the London School of Hygiene and Tropical Medicine.
+
+# ## Acknowledgements
+# 
+# This document is based on notes created for the MSc in Medical Statistics, London School of Hygiene and Tropical Medicine.
+# 
+# Many people have contributed to this document over time, including a large number of previous and current members of the Department of Medical Statistics at the London School of Hygiene and Tropical Medicine. In particular, we would like to acknowledge contributions from Ian White who created much of this material, and from Vera Mann, Dan Altmann, John Gregson and Jennifer Rogers.
+# 
+# 
+
+# ## Typos, corrections and questions 
+# 
+# Inevitably there will be some typos in these notes. Please do let us know any you spot (at: <mschds@lshtm.ac.uk>) and we will correct them. 
+# 
+# In particular, **the "worked solutions" are in beta form**. These have not yet been subjected to proof reading. We are in the process of doing so, but have included them in the meantime in case they are helpful at this stage.  
+# 
+# Note: Latest update and corrections, 20 September 2021. Thanks for all your feedback so far.
+
+# Enjoy! 

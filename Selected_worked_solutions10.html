@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Differentiation and integration &#8212; Maths, Probability and Statistics Refresher</title>
+    <title>Worked solutions - Quiz 10 &#8212; Maths, Probability and Statistics Refresher</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -55,8 +55,8 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Matrices" href="mr3_matrices.html" />
-    <link rel="prev" title="Functions, exponential and logarithm rules" href="mr1_functions.html" />
+    <link rel="next" title="Further material" href="mr_reading.html" />
+    <link rel="prev" title="Worked solutions - Quiz 9" href="Selected_worked_solutions9.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -98,14 +98,14 @@
   Mathematics
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="mr1_functions.html">
    Functions, exponential and logarithm rules
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="mr2_calculus.html">
    Differentiation and integration
   </a>
  </li>
@@ -219,7 +219,7 @@
   Solutions
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Solutions.html">
    Solution to quizzes
@@ -270,8 +270,8 @@
    Worked solutions - Quiz 9
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Selected_worked_solutions10.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Worked solutions - Quiz 10
   </a>
  </li>
@@ -328,7 +328,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/mr2_calculus.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Selected_worked_solutions10.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -348,7 +348,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/LSHTM-HDS/Math-Refresher/issues/new?title=Issue%20on%20page%20%2Fmr2_calculus.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/LSHTM-HDS/Math-Refresher/issues/new?title=Issue%20on%20page%20%2FSelected_worked_solutions10.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -369,7 +369,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/LSHTM-HDS/Math-Refresher/main?urlpath=tree/Refresher/mr2_calculus.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/LSHTM-HDS/Math-Refresher/main?urlpath=tree/Refresher/Selected_worked_solutions10.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -392,18 +392,58 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#some-rules-for-differentiation">
-   Some rules for differentiation
+  <a class="reference internal nav-link" href="#question-1">
+   Question 1
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#note-on-partial-differentiation">
-   Note on partial differentiation
+  <a class="reference internal nav-link" href="#question-2">
+   Question 2
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#integration">
-   Integration
+  <a class="reference internal nav-link" href="#question-3">
+   Question 3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-4">
+   Question 4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-5">
+   Question 5
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-6">
+   Question 6
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-7">
+   Question 7
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-9">
+   Question 9
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-10">
+   Question 10
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-11">
+   Question 11
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#questions-12-14">
+   Questions 12-14
   </a>
  </li>
 </ul>
@@ -417,68 +457,186 @@
         
               <div>
                 
-  <div class="section" id="differentiation-and-integration">
-<h1>Differentiation and integration<a class="headerlink" href="#differentiation-and-integration" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="some-rules-for-differentiation">
-<h2>Some rules for differentiation<a class="headerlink" href="#some-rules-for-differentiation" title="Permalink to this headline">¶</a></h2>
-<p>Some simple rules are:</p>
+  <div class="section" id="worked-solutions-quiz-10">
+<h1>Worked solutions - Quiz 10<a class="headerlink" href="#worked-solutions-quiz-10" title="Permalink to this headline">¶</a></h1>
+<p>This page contains sketch notes to some of the quiz questions from Quiz 10. It is not comprehensive. We have tried to include most of the questions where it may not be obvious how to get to the correct answer.</p>
+<div class="section" id="question-1">
+<h2>Question 1<a class="headerlink" href="#question-1" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
-\[\frac{d}{dx} a = 0\]</div>
+\[
+\begin{align*}
+\frac{d}{dx} log(x^2) = \frac{d}{dx} 2 log(x) = 2 \frac{d}{dx} log(x) = \frac{2}{x}
+\end{align*}
+\]</div>
+<p>Alternatively, via the chain rule, <span class="math notranslate nohighlight">\(u=x^2\)</span>, so <span class="math notranslate nohighlight">\(f(x) = log(u)\)</span> and <span class="math notranslate nohighlight">\(du/dx = 2x\)</span>. Then</p>
 <div class="math notranslate nohighlight">
-\[\frac{d}{dx} (a x) = a\]</div>
-<div class="math notranslate nohighlight">
-\[\frac{d}{dx} x^n = n x^{n – 1}\]</div>
-<div class="math notranslate nohighlight">
-\[\frac{d}{dx} log_e(x) = \frac{1}{x}\]</div>
-<div class="math notranslate nohighlight">
-\[\frac{d}{dx} e^x  = e^x\]</div>
-<p>And some rules about dealing with differentiating functions, sums and products. For functions of <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(F(x)\)</span> and <span class="math notranslate nohighlight">\(L(x)\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\frac{d}{dx} e^{F(x)} = \frac{dF(x)}{dx} e^{F(x)} = F’(x) e^{F(x)}\]</div>
-<div class="math notranslate nohighlight">
-\[\frac{d}{dx} (F(x)+L(x)) =  F’(x) + L’(x)\]</div>
-<div class="math notranslate nohighlight">
-\[\frac{d}{dx} (F(x) . L(x)) = L(x).F’(x) + F(x).L’(x)\]</div>
-<div class="math notranslate nohighlight">
-\[\frac{d}{dx} \left(\frac{F(x)}{L(x)}\right) = \frac{(F'(x))}{(L(x))} -  \frac{(F(x).L'(x))}{([L(x)]^2)}\]</div>
-<p>or</p>
-<div class="math notranslate nohighlight">
-\[\frac{d}{dx} \left(\frac{F(x)}{L(x)}\right) = \frac{(F'(x)L(x) - L'(x)F(x))}{(L(x)^2)}\]</div>
-<p>In general, the chain rule is very helpful.</p>
-<div class="math notranslate nohighlight">
-\[\mbox{The chain rule}: \frac{dy}{dx} = \frac{dy}{du} \times \frac{du}{dx}\]</div>
+\[
+\begin{align*}
+\frac{d}{dx} log(x^2) = \frac{d}{du} log(u) \frac{du}{dx} = \frac{1}{u} \frac{du}{dx} = \frac{1}{x^2} \times 2x = \frac{2}{x}
+\end{align*}
+\]</div>
 </div>
-<div class="section" id="note-on-partial-differentiation">
-<h2>Note on partial differentiation<a class="headerlink" href="#note-on-partial-differentiation" title="Permalink to this headline">¶</a></h2>
-<p>Suppose we have a function, <span class="math notranslate nohighlight">\(F\)</span>, of two variables, <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.</p>
-<p>We can differentiate the function <span class="math notranslate nohighlight">\(F\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(\frac{\partial F}{\partial x}\)</span>. This means we differentiate <span class="math notranslate nohighlight">\(F\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> and consider all other variables (i.e. <span class="math notranslate nohighlight">\(y\)</span>) to be fixed.</p>
-<p>Similarly, we can obtain the partial derivative of <span class="math notranslate nohighlight">\(F\)</span> with respect to <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(\frac{\partial F}{\partial y}\)</span>.</p>
-<p>There are now various second derivatives. We can differentiate with respect to <span class="math notranslate nohighlight">\(x\)</span> twice, <span class="math notranslate nohighlight">\(\frac{\partial^2 F}{\partial x^2}\)</span>, differentiate with respect to <span class="math notranslate nohighlight">\(y\)</span> twice,  <span class="math notranslate nohighlight">\(\frac{\partial^2 F}{\partial y^2}\)</span>, or differentiate with respect to <span class="math notranslate nohighlight">\(x\)</span> and then differentiate with respect to <span class="math notranslate nohighlight">\(y\)</span>,  <span class="math notranslate nohighlight">\(\frac{\partial^2 F}{\partial x \partial y}\)</span>. Doing the last steps in the opposite order gives <span class="math notranslate nohighlight">\(\frac{\partial^2 F}{\partial y \partial x}\)</span>.</p>
+<div class="section" id="question-2">
+<h2>Question 2<a class="headerlink" href="#question-2" title="Permalink to this headline">¶</a></h2>
+<p>Using the product rule,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\frac{d}{dx} x log(x) &amp; = x \frac{d}{dx} log(x) + log(x) \frac{d}{dx} x \\ &amp; = x \times \frac{1}{x} + log(x) = 1 + log(x)
+\end{align*}
+\end{split}\]</div>
 </div>
-<div class="section" id="integration">
-<h2>Integration<a class="headerlink" href="#integration" title="Permalink to this headline">¶</a></h2>
-<p>Some important integrals. Note, the constant is omitted below, for brevity.</p>
+<div class="section" id="question-3">
+<h2>Question 3<a class="headerlink" href="#question-3" title="Permalink to this headline">¶</a></h2>
+<p>Using the product rule (or you could use the quotient rule),</p>
 <div class="math notranslate nohighlight">
-\[\int a \, dx = ax\]</div>
+\[\begin{split}
+\begin{align*}
+\frac{d}{dx} \frac{x}{log(x)} &amp; = x \frac{d}{dx} \frac{1}{log(x)} + \frac{1}{log(x)} \frac{d}{dx} x \\ &amp; = x \times \frac{-1}{xlog(x)^2} + \frac{1}{log(x)}   \\ &amp; = \frac{1}{log(x)} - \frac{1}{log(x)^2} 
+\end{align*}
+\end{split}\]</div>
+</div>
+<div class="section" id="question-4">
+<h2>Question 4<a class="headerlink" href="#question-4" title="Permalink to this headline">¶</a></h2>
+<p>To simplify this, just look at <span class="math notranslate nohighlight">\(i=1\)</span> to start with</p>
 <div class="math notranslate nohighlight">
-\[\int a F(x) dx =  a \int F(x) dx\]</div>
+\[\begin{split}
+\begin{align*}
+\frac{d}{d\beta} log(\beta x_1 + 2 x_1 + 1^2) &amp; = \frac{1}{\beta x_1 + 2 x_1 + 1^2} \frac{d}{d \beta} (\beta x_1 + 2 x_1 + 1^2) \\
+&amp; = \frac{x_1}{\beta x_1 + 2 x_1 + 1^2} 
+\end{align*}
+\end{split}\]</div>
+<p>So for any <span class="math notranslate nohighlight">\(i=1,2,...,n\)</span>, we have</p>
 <div class="math notranslate nohighlight">
-\[\int x^n dx = \frac{x^{n+1}}{n+1}\]</div>
+\[
+\begin{align*}
+\frac{d}{d\beta} log(\beta x_i + 2 x_i + i^2) &amp; = \frac{x_i}{\beta x_i + 2 x_i + i^2} 
+\end{align*}
+\]</div>
+<p>and thus</p>
 <div class="math notranslate nohighlight">
-\[\int F’(x) [F(x)]^n dx = \frac{[F(x)]^{(n+1)}}{(n+1)}\]</div>
+\[
+\begin{align*}
+\frac{d}{d\beta} \sum_{i=1}^n log(\beta x_i + 2 x_i + i^2) &amp; = \frac{x_i}{\beta x_i + 2 x_i + i^2}  = \sum_{i=1}^n \frac{d}{d\beta} log(\beta x_i + 2 x_i + i^2)  = \sum_{i=1}^n \frac{x_i}{\beta x_i + 2 x_i + i^2}  
+\end{align*}
+\]</div>
+</div>
+<div class="section" id="question-5">
+<h2>Question 5<a class="headerlink" href="#question-5" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
-\[\int e^x dx = e^x\]</div>
+\[
+\begin{align*}
+\frac{d}{d\sigma} \sigma log(\sigma^2) = 2 \frac{d}{d\sigma} \sigma log(\sigma) = 2 \sigma \frac{d}{d\sigma} log(\sigma) + 2 log(\sigma) \frac{d}{d\sigma} \sigma = 2 \frac{\sigma}{\sigma} + 2 log(\sigma) = 2 (1 + log(\sigma))
+\end{align*}
+\]</div>
+<p>This can also be written as</p>
 <div class="math notranslate nohighlight">
-\[\int F’(x) e^{F(x)}  dx = e^{F(x)}\]</div>
+\[
+\begin{align*}
+\frac{d}{d\sigma} \sigma log(\sigma^2) = 2 + 2 log(\sigma) = 2 + log(\sigma^2) 
+\end{align*}
+\]</div>
+</div>
+<div class="section" id="question-6">
+<h2>Question 6<a class="headerlink" href="#question-6" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
-\[\int \frac{1}{x} = log_e (x)\]</div>
+\[\begin{split}
+\begin{align*}
+\frac{d}{d\theta} \frac{\theta}{1 + e^\theta} &amp; = \theta \frac{d}{d\theta} \frac{1}{1 + e^\theta} + \frac{1}{1 + e^\theta}  \frac{d}{d\theta} \theta  \\ &amp; = \theta \frac{-e^\theta}{(1 + e^\theta)^2} + \frac{1}{1 + e^\theta}   \\ &amp; = \frac{1}{1 + e^\theta}  -  \frac{\theta e^\theta}{(1 + e^\theta)^2}
+\end{align*}
+\end{split}\]</div>
+</div>
+<div class="section" id="question-7">
+<h2>Question 7<a class="headerlink" href="#question-7" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
-\[\int \frac{F'(x)}{F(x)} dx = log_e (F(x))\]</div>
+\[
+\begin{align*}
+\int \frac{2x + 3}{x^2 + 3x - 5} dx 
+\end{align*}
+\]</div>
+<p>We notice that if you differentiate the denominator you get the numerator. Using the rule</p>
 <div class="math notranslate nohighlight">
-\[\int (F(x) + L(x)) dx = \int F(x) dx + \int L(x) dx\]</div>
-<p>Integrating by parts:</p>
+\[
+\begin{align*}
+\int \frac{F'(x)}{F(x)} dx  = log(F(x)) + x
+\end{align*}
+\]</div>
+<p>we have</p>
 <div class="math notranslate nohighlight">
-\[\int_a^b u \frac{dv}{dx}dx= [uv]_a^b - \int_a^b v  \frac{du}{dx}dx\]</div>
+\[
+\begin{align*}
+\int \frac{2x + 3}{x^2 + 3x - 5} dx = log(x^2 + 3x - 5) + c
+\end{align*}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(c\)</span> is a constant.</p>
+</div>
+<div class="section" id="question-9">
+<h2>Question 9<a class="headerlink" href="#question-9" title="Permalink to this headline">¶</a></h2>
+<p>You may not need to integrate by parts during this course, so don’t worry if this is a bit rusty.</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{align*}
+\int x^2 e^{3x} dx  
+\end{align*}
+\]</div>
+<p>Let <span class="math notranslate nohighlight">\(u=x^2\)</span> so <span class="math notranslate nohighlight">\(du/dx=2x\)</span> and <span class="math notranslate nohighlight">\(dv/dx=e^{3x}\)</span> so <span class="math notranslate nohighlight">\(v = \frac{e^{3x}}{3}\)</span>. Then using</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{align*}
+\int_a^b u \frac{dv}{dx} dx = [u v]_a^b - \int_a^b v \frac{du}{dx}dx  
+\end{align*}
+\]</div>
+<p>gives</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\int x^2 e^{3x} dx   dx = x^2  \frac{e^{3x}}{3}  - \int \frac{e^{3x}}{3} 2x dx   + c \\ &amp; =  \frac{x^2  e^{3x}}{3}  - \frac{2}{3} \int  x e^{3x}  dx + c
+\end{align*}
+\end{split}\]</div>
+<p>We do the same thing to solve the second term here. This time, let <span class="math notranslate nohighlight">\(u=x\)</span>, so <span class="math notranslate nohighlight">\(du/dx=1\)</span>. As previously, let <span class="math notranslate nohighlight">\(dv/dx=e^{3x}\)</span> so  <span class="math notranslate nohighlight">\(v = \frac{e^{3x}}{3}\)</span>. Then</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\int x e^{3x}  dx &amp; = x \frac{e^{3x}}{3} - \int  \frac{e^{3x}}{3} dx \\
+&amp; = x \frac{e^{3x}}{3} - \frac{1}{3} \int e^{3x} dx \\ &amp; = x \frac{e^{3x}}{3} - \frac{1}{3} \frac{e^{3x}}{3}
+\end{align*}
+\end{split}\]</div>
+<p>Putting the two bits together, we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\int x^2 e^{3x} dx   dx &amp; =  \frac{x^2  e^{3x}}{3}  - \frac{2}{3} \left( x \frac{e^{3x}}{3} - \frac{1}{3} \frac{e^{3x}}{3} \right) + c \\ &amp; =  \frac{ e^{3x}}{3^3} \left(3^2 x^2   - 6 x + 1 \right) + c
+\end{align*}
+\end{split}\]</div>
+</div>
+<div class="section" id="question-10">
+<h2>Question 10<a class="headerlink" href="#question-10" title="Permalink to this headline">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[
+\begin{align*}
+\int_0^1 x \alpha x^{\alpha - 1} dx  &amp; = \int_0^1 x \alpha x^{\alpha} dx  = \left[ \frac{ \alpha x^{\alpha + 1}}{\alpha + 1} \right]_0^1 =  \frac{\alpha 1^{\alpha + 1}}{\alpha + 1} - 0 = \frac{\alpha}{\alpha + 1}
+\end{align*}
+\]</div>
+</div>
+<div class="section" id="question-11">
+<h2>Question 11<a class="headerlink" href="#question-11" title="Permalink to this headline">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[
+\begin{align*}
+\int_0^\infty t \lambda e^{-\lambda t} dt  
+\end{align*}
+\]</div>
+<p>Let <span class="math notranslate nohighlight">\(u=t\)</span> and <span class="math notranslate nohighlight">\(dv/dt = \lambda e^{-\lambda t}\)</span>. Then <span class="math notranslate nohighlight">\(du/dt = 1\)</span> and <span class="math notranslate nohighlight">\(v = - e^{-\lambda t}\)</span>. Then</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\int_0^\infty t \lambda e^{-\lambda t} dt  &amp; =  \left[-t e^{-\lambda t}\right]_0^\infty + \int_0^\infty e^{-\lambda t} dt   \\ &amp; = 0 + \left[ \frac{e^{-\lambda t}}{-\lambda} \right]_0^\infty \\ &amp; =   - \frac{- e^{-\lambda . 0}}{\lambda} = \frac{1}{\lambda}
+\end{align*}
+\end{split}\]</div>
+</div>
+<div class="section" id="questions-12-14">
+<h2>Questions 12-14<a class="headerlink" href="#questions-12-14" title="Permalink to this headline">¶</a></h2>
+<p>For MSc Health Data Science students, more detail is provided in Welcome Week session notes.</p>
 </div>
 </div>
 
@@ -507,8 +665,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="mr1_functions.html" title="previous page">Functions, exponential and logarithm rules</a>
-    <a class='right-next' id="next-link" href="mr3_matrices.html" title="next page">Matrices</a>
+    <a class='left-prev' id="prev-link" href="Selected_worked_solutions9.html" title="previous page">Worked solutions - Quiz 9</a>
+    <a class='right-next' id="next-link" href="mr_reading.html" title="next page">Further material</a>
 
         </div>
         

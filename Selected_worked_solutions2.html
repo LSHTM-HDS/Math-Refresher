@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Differentiation and integration &#8212; Maths, Probability and Statistics Refresher</title>
+    <title>Worked solutions - Quiz 2 &#8212; Maths, Probability and Statistics Refresher</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -55,8 +55,8 @@
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Matrices" href="mr3_matrices.html" />
-    <link rel="prev" title="Functions, exponential and logarithm rules" href="mr1_functions.html" />
+    <link rel="next" title="Worked solutions - Quiz 3" href="Selected_worked_solutions3.html" />
+    <link rel="prev" title="Worked solutions - Quiz 1" href="Selected_worked_solutions1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -98,14 +98,14 @@
   Mathematics
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="mr1_functions.html">
    Functions, exponential and logarithm rules
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="mr2_calculus.html">
    Differentiation and integration
   </a>
  </li>
@@ -219,7 +219,7 @@
   Solutions
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="Solutions.html">
    Solution to quizzes
@@ -230,8 +230,8 @@
    Worked solutions - Quiz 1
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Selected_worked_solutions2.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Worked solutions - Quiz 2
   </a>
  </li>
@@ -328,7 +328,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/mr2_calculus.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Selected_worked_solutions2.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -348,7 +348,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/LSHTM-HDS/Math-Refresher/issues/new?title=Issue%20on%20page%20%2Fmr2_calculus.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/LSHTM-HDS/Math-Refresher/issues/new?title=Issue%20on%20page%20%2FSelected_worked_solutions2.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -369,7 +369,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/LSHTM-HDS/Math-Refresher/main?urlpath=tree/Refresher/mr2_calculus.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/LSHTM-HDS/Math-Refresher/main?urlpath=tree/Refresher/Selected_worked_solutions2.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -392,18 +392,38 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#some-rules-for-differentiation">
-   Some rules for differentiation
+  <a class="reference internal nav-link" href="#question-3">
+   Question 3
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#note-on-partial-differentiation">
-   Note on partial differentiation
+  <a class="reference internal nav-link" href="#question-4">
+   Question 4
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#integration">
-   Integration
+  <a class="reference internal nav-link" href="#question-6">
+   Question 6
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-8">
+   Question 8
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-11">
+   Question 11
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-12">
+   Question 12
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#question-13">
+   Question 13
   </a>
  </li>
 </ul>
@@ -417,68 +437,236 @@
         
               <div>
                 
-  <div class="section" id="differentiation-and-integration">
-<h1>Differentiation and integration<a class="headerlink" href="#differentiation-and-integration" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="some-rules-for-differentiation">
-<h2>Some rules for differentiation<a class="headerlink" href="#some-rules-for-differentiation" title="Permalink to this headline">¶</a></h2>
-<p>Some simple rules are:</p>
+  <div class="section" id="worked-solutions-quiz-2">
+<h1>Worked solutions - Quiz 2<a class="headerlink" href="#worked-solutions-quiz-2" title="Permalink to this headline">¶</a></h1>
+<p>This page contains sketch notes to some of the quiz questions from Quiz 2. It is not comprehensive. We have tried to include most of the questions where it may not be obvious how to get to the correct answer.</p>
+<div class="section" id="question-3">
+<h2>Question 3<a class="headerlink" href="#question-3" title="Permalink to this headline">¶</a></h2>
+<p>Differentiate</p>
 <div class="math notranslate nohighlight">
-\[\frac{d}{dx} a = 0\]</div>
+\[
+\begin{align*}
+f(x) = \sqrt{1+x^2} 
+\end{align*}
+\]</div>
 <div class="math notranslate nohighlight">
-\[\frac{d}{dx} (a x) = a\]</div>
+\[\begin{split}
+\begin{align*}
+\frac{d f(x)}{dx} &amp; = \frac{d  }{dx} (\sqrt{1+x^2} ) \\
+\end{align*}
+\end{split}\]</div>
+<p>If we let <span class="math notranslate nohighlight">\(u=(1+x^2)\)</span> then <span class="math notranslate nohighlight">\(f(x)=u^{1/2}\)</span>.</p>
 <div class="math notranslate nohighlight">
-\[\frac{d}{dx} x^n = n x^{n – 1}\]</div>
+\[\begin{split}
+\begin{align*}
+\frac{d f(x)}{dx} &amp; = \frac{df}{du} \frac{du}{dx} \\ &amp; = \frac{d}{du} (u^{1/2}) \times  \frac{du}{dx}  \\ &amp; = \frac{1}{2} u^{-1/2} \frac{du}{dx}
+\end{align*}
+\end{split}\]</div>
+<p>Now differentiating <span class="math notranslate nohighlight">\(u=(1+x^2)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> gives</p>
 <div class="math notranslate nohighlight">
-\[\frac{d}{dx} log_e(x) = \frac{1}{x}\]</div>
+\[
+\frac{du}{dx} = 2x
+\]</div>
+<p>Then</p>
 <div class="math notranslate nohighlight">
-\[\frac{d}{dx} e^x  = e^x\]</div>
-<p>And some rules about dealing with differentiating functions, sums and products. For functions of <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(F(x)\)</span> and <span class="math notranslate nohighlight">\(L(x)\)</span>:</p>
+\[
+\begin{align*}
+\frac{d f(x)}{dx} &amp; =\frac{1}{2} (1+x^2)^{-1/2} \times 2x
+\end{align*}
+\]</div>
+<p>which simplifies to give</p>
 <div class="math notranslate nohighlight">
-\[\frac{d}{dx} e^{F(x)} = \frac{dF(x)}{dx} e^{F(x)} = F’(x) e^{F(x)}\]</div>
-<div class="math notranslate nohighlight">
-\[\frac{d}{dx} (F(x)+L(x)) =  F’(x) + L’(x)\]</div>
-<div class="math notranslate nohighlight">
-\[\frac{d}{dx} (F(x) . L(x)) = L(x).F’(x) + F(x).L’(x)\]</div>
-<div class="math notranslate nohighlight">
-\[\frac{d}{dx} \left(\frac{F(x)}{L(x)}\right) = \frac{(F'(x))}{(L(x))} -  \frac{(F(x).L'(x))}{([L(x)]^2)}\]</div>
-<p>or</p>
-<div class="math notranslate nohighlight">
-\[\frac{d}{dx} \left(\frac{F(x)}{L(x)}\right) = \frac{(F'(x)L(x) - L'(x)F(x))}{(L(x)^2)}\]</div>
-<p>In general, the chain rule is very helpful.</p>
-<div class="math notranslate nohighlight">
-\[\mbox{The chain rule}: \frac{dy}{dx} = \frac{dy}{du} \times \frac{du}{dx}\]</div>
+\[
+\begin{align*}
+\frac{d f(x)}{dx} &amp; = \frac{x}{\sqrt{1+x^2}}
+\end{align*}
+\]</div>
 </div>
-<div class="section" id="note-on-partial-differentiation">
-<h2>Note on partial differentiation<a class="headerlink" href="#note-on-partial-differentiation" title="Permalink to this headline">¶</a></h2>
-<p>Suppose we have a function, <span class="math notranslate nohighlight">\(F\)</span>, of two variables, <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.</p>
-<p>We can differentiate the function <span class="math notranslate nohighlight">\(F\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(\frac{\partial F}{\partial x}\)</span>. This means we differentiate <span class="math notranslate nohighlight">\(F\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> and consider all other variables (i.e. <span class="math notranslate nohighlight">\(y\)</span>) to be fixed.</p>
-<p>Similarly, we can obtain the partial derivative of <span class="math notranslate nohighlight">\(F\)</span> with respect to <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(\frac{\partial F}{\partial y}\)</span>.</p>
-<p>There are now various second derivatives. We can differentiate with respect to <span class="math notranslate nohighlight">\(x\)</span> twice, <span class="math notranslate nohighlight">\(\frac{\partial^2 F}{\partial x^2}\)</span>, differentiate with respect to <span class="math notranslate nohighlight">\(y\)</span> twice,  <span class="math notranslate nohighlight">\(\frac{\partial^2 F}{\partial y^2}\)</span>, or differentiate with respect to <span class="math notranslate nohighlight">\(x\)</span> and then differentiate with respect to <span class="math notranslate nohighlight">\(y\)</span>,  <span class="math notranslate nohighlight">\(\frac{\partial^2 F}{\partial x \partial y}\)</span>. Doing the last steps in the opposite order gives <span class="math notranslate nohighlight">\(\frac{\partial^2 F}{\partial y \partial x}\)</span>.</p>
+<div class="section" id="question-4">
+<h2>Question 4<a class="headerlink" href="#question-4" title="Permalink to this headline">¶</a></h2>
+<p>Differentiate</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{align*}
+f(x) = \frac{1}{log_e(x)} 
+\end{align*}
+\]</div>
+<p>Let <span class="math notranslate nohighlight">\(u=log_e(x)\)</span>. Then <span class="math notranslate nohighlight">\(f(x) = u^{-1}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\frac{d f(x)}{dx} &amp; = \frac{df}{du} \frac{du}{dx} \\ &amp; = \frac{d}{du} (u^{-1}) \times  \frac{du}{dx}  \\ &amp; = - u^{-2} \frac{du}{dx}
+\end{align*}
+\end{split}\]</div>
+<p>Now differentiating <span class="math notranslate nohighlight">\(u=log_e(x)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> gives</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{du}{dx} = \frac{1}{x}
+\]</div>
+<p>Then</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\frac{d f(x)}{dx} &amp; = - (log_e(x))^{-2} \frac{1}{x} \\ &amp; = \frac{-1}{x (log_e(x))^2}
+\end{align*}
+\end{split}\]</div>
 </div>
-<div class="section" id="integration">
-<h2>Integration<a class="headerlink" href="#integration" title="Permalink to this headline">¶</a></h2>
-<p>Some important integrals. Note, the constant is omitted below, for brevity.</p>
+<div class="section" id="question-6">
+<h2>Question 6<a class="headerlink" href="#question-6" title="Permalink to this headline">¶</a></h2>
+<p>Differentiate</p>
 <div class="math notranslate nohighlight">
-\[\int a \, dx = ax\]</div>
+\[
+\begin{align*}
+f(x) = \frac{(1+x)}{x^2} 
+\end{align*}
+\]</div>
+<p>You can use the quotient rule. I tend to use the product rule. It comes to the same thing.</p>
+<p>Let <span class="math notranslate nohighlight">\(F(x) = 1+x\)</span> and <span class="math notranslate nohighlight">\(L(x) = \frac{1}{x^2}\)</span>. Then <span class="math notranslate nohighlight">\(f(x) = F(x) \times L(x)\)</span>. So we have</p>
 <div class="math notranslate nohighlight">
-\[\int a F(x) dx =  a \int F(x) dx\]</div>
+\[\begin{split}
+\begin{align*}
+\frac{df(x)}{dx} &amp; = \frac{d }{dx} (F(x) \times L(x))  \\ &amp;=   L(x) \frac{d }{dx} F(x) + F(x)  \frac{d }{dx} L(x) 
+\end{align*}
+\end{split}\]</div>
+<p>Now</p>
 <div class="math notranslate nohighlight">
-\[\int x^n dx = \frac{x^{n+1}}{n+1}\]</div>
+\[
+\begin{align*}
+\frac{d}{dx} F(x) &amp; = \frac{d}{dx} (1+x) =  1 
+\end{align*}
+\]</div>
 <div class="math notranslate nohighlight">
-\[\int F’(x) [F(x)]^n dx = \frac{[F(x)]^{(n+1)}}{(n+1)}\]</div>
+\[
+\begin{align*}
+\frac{d}{dx} L(x) &amp; = \frac{d}{dx} \frac{1}{x^2} =  \frac{-2}{x^3} 
+\end{align*}
+\]</div>
+<p>Then</p>
 <div class="math notranslate nohighlight">
-\[\int e^x dx = e^x\]</div>
+\[\begin{split}
+\begin{align*}
+\frac{df(x)}{dx} &amp; =  \frac{1}{x^2} \times 1  + (1+x) \times \frac{-2}{x^3}  \\ &amp; =  \frac{1}{x^2} \left( 1 - \frac{2(1+x)}{x}\right) \\ &amp; =   \frac{1}{x^2}  \left(\frac{1}{x} (x - 2 - 2x) \right) \\ &amp; =  \frac{-(2 + x)}{x^3} 
+\end{align*}
+\end{split}\]</div>
+</div>
+<div class="section" id="question-8">
+<h2>Question 8<a class="headerlink" href="#question-8" title="Permalink to this headline">¶</a></h2>
 <div class="math notranslate nohighlight">
-\[\int F’(x) e^{F(x)}  dx = e^{F(x)}\]</div>
+\[
+\begin{align*}
+L = -\frac{(x-\mu)^2}{s} - log(s) 
+\end{align*}
+\]</div>
+<p>Differentiating <span class="math notranslate nohighlight">\(L\)</span> with respect to <span class="math notranslate nohighlight">\(\mu\)</span> gives</p>
 <div class="math notranslate nohighlight">
-\[\int \frac{1}{x} = log_e (x)\]</div>
+\[\begin{split}
+\begin{align*}
+\frac{dL}{d\mu} &amp; = \frac{d}{d\mu} \left( -\frac{(x-\mu)^2}{s} - log(s)  \right) \\ &amp; = \frac{d}{d\mu}  - \frac{(x-\mu)^2}{s} - \frac{d}{d\mu} log(s)   \\ &amp; = - \frac{1}{s} \frac{d}{d\mu} (x-\mu)^2 - 0 \\&amp; - \frac{1}{s} \times 2(x-\mu) \times -1 \\ &amp; = \frac{2 (x-\mu)}{s}
+\end{align*}
+\end{split}\]</div>
+<p>Differentiating <span class="math notranslate nohighlight">\(L\)</span> with respect to <span class="math notranslate nohighlight">\(s\)</span> gives</p>
 <div class="math notranslate nohighlight">
-\[\int \frac{F'(x)}{F(x)} dx = log_e (F(x))\]</div>
+\[\begin{split}
+\begin{align*}
+\frac{dL}{ds} &amp; = \frac{d}{ds} \left( -\frac{(x-\mu)^2}{s} - log(s)  \right) \\ &amp; = \frac{d}{ds}  - \frac{(x-\mu)^2}{s} - \frac{d}{ds} log(s)   \\ &amp; = - (x-\mu)^2 \frac{d}{ds}  \frac{1}{s} - \frac{1}{s} \\ &amp; = - (x-\mu)^2 \times \frac{-1}{s^2} - \frac{1}{s}  \\ &amp; = \frac{(x-\mu)^2}{s^2} - \frac{1}{s}
+\end{align*}
+\end{split}\]</div>
+<p>To get the second derivatives, we differentiate again. For example,</p>
 <div class="math notranslate nohighlight">
-\[\int (F(x) + L(x)) dx = \int F(x) dx + \int L(x) dx\]</div>
-<p>Integrating by parts:</p>
+\[\begin{split}
+\begin{align*}
+\frac{d^2L}{d\mu^2} &amp; =  \frac{d}{d\mu} \left\{ \frac{d L}{d\mu}    \right\}   \\ &amp; =  \frac{d}{d\mu} \frac{2 (x-\mu)}{s} \\ &amp; = \frac{-2}{s}
+\end{align*}
+\end{split}\]</div>
+<p>And</p>
 <div class="math notranslate nohighlight">
-\[\int_a^b u \frac{dv}{dx}dx= [uv]_a^b - \int_a^b v  \frac{du}{dx}dx\]</div>
+\[\begin{split}
+\begin{align*}
+\frac{d^2L}{ds^2} &amp; =  \frac{d}{ds} \left\{ \frac{d L}{ds}    \right\}   \\ &amp; =  \frac{d}{ds} \left\{  \frac{(x-\mu)^2}{s^2} - \frac{1}{s}\right\}  \\ &amp; = (x-\mu)^2 \frac{d}{ds} \frac{1}{s^2} -  \frac{d}{ds} \frac{1}{s}  \\ &amp; =  (x-\mu)^2 \times \frac{-2}{s^3}  -   \frac{-1}{s^2} \\ &amp; =  \frac{-2 (x-\mu)^2}{s^3} + \frac{1}{s^2}  
+\end{align*}
+\end{split}\]</div>
+<p>Finally,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\frac{d^2L}{d\mu ds^2} &amp; =  \frac{d}{ds} \left\{ \frac{d L}{d \mu}  \right\}   \\ &amp; =   \frac{d}{ds} \frac{2 (x-\mu)}{s} \\ &amp; = 2 (x-\mu) \frac{d}{ds} \frac{1 }{s}  \\ &amp; = 2 (x-\mu) \times \frac{-1}{s^2}  \\ &amp; = \frac{-2 (x-\mu)}{s^2}  
+\end{align*}
+\end{split}\]</div>
+<p>You can also do the other way round (differentiate first with respect to <span class="math notranslate nohighlight">\(s\)</span> and then with respect to <span class="math notranslate nohighlight">\(\mu\)</span>, but you come to the same answer).</p>
+</div>
+<div class="section" id="question-11">
+<h2>Question 11<a class="headerlink" href="#question-11" title="Permalink to this headline">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[
+\begin{align*}
+\int \frac{x}{x^2 - 4} dx  
+\end{align*}
+\]</div>
+<p>We notice that if we differentiate the denominator, we get <span class="math notranslate nohighlight">\(2x\)</span>, which is proportional to the numerator. Remember the rule</p>
+<div class="math notranslate nohighlight">
+\[ 
+\int \frac{F'(x)}{F(x)} dx = log_e(F(x))
+\]</div>
+<p>So if we let <span class="math notranslate nohighlight">\(F(x) = x^2 - 4\)</span> then</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{align*}
+\int \frac{2 x}{x^2 - 4} dx  = log_e(x^2 - 4)
+\end{align*}
+\]</div>
+<p>which tells us that</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{align*}
+\int \frac{x}{x^2 - 4} dx  = \frac{1}{2} log_e(x^2 - 4)
+\end{align*}
+\]</div>
+<p>We can express this in various ways,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\int \frac{x}{x^2 - 4} dx  &amp; = \frac{1}{2} log_e(x^2 - 4) \\ &amp; = log_e( \sqrt{x^2 - 4}) \\ &amp; =  \frac{1}{2} log_e((x-2)(x+2)) 
+\end{align*}
+\end{split}\]</div>
+<p>The easiest way to tackle this question, however, is to differentiate the potential solutions and see which gives the correct answer!</p>
+</div>
+<div class="section" id="question-12">
+<h2>Question 12<a class="headerlink" href="#question-12" title="Permalink to this headline">¶</a></h2>
+<p>(a) Area under curve <span class="math notranslate nohighlight">\(y=x^2\)</span> between <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=3\)</span>.</p>
+<p>This is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\int_0^3 x^2 dx  &amp; = \left[ \frac{x^3}{3} \right]_0^3 \\ &amp; =  \frac{3^3}{3}  -  \frac{0^3}{3} \\ &amp; = 9 - 0 = 9
+\end{align*}
+\end{split}\]</div>
+<p>(b) Area under curve <span class="math notranslate nohighlight">\(y=x^2\)</span> between <span class="math notranslate nohighlight">\(x=-0\)</span> and <span class="math notranslate nohighlight">\(x=-3\)</span>.</p>
+<p>This is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\int_{-3}^0 x^2 dx  &amp; = \left[ \frac{x^3}{3} \right]_{-3}^0 \\ &amp; =  \frac{0^3}{3}  -  \frac{(-3)^3}{3} \\ &amp; = 0 - (-9) = 9
+\end{align*}
+\end{split}\]</div>
+</div>
+<div class="section" id="question-13">
+<h2>Question 13<a class="headerlink" href="#question-13" title="Permalink to this headline">¶</a></h2>
+<p>(a) Area under curve <span class="math notranslate nohighlight">\(y=x^3 - 3x\)</span> between <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=3\)</span>.</p>
+<p>This is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\int_0^3 (x^3 - 3x) dx  &amp; = \left[ \frac{x^4}{4} - \frac{3 x^2}{2} \right]_0^3 \\ &amp; =  \frac{3^4}{4} - \frac{3 . 3^2}{2}  -  \frac{0^4}{4} +   \frac{3 . 0^2}{2}  \\ &amp; = \frac{3^3}{2}  \left( \frac{3}{2} - 1\right) \\ &amp; =  \frac{3^3}{4} = 6.75
+\end{align*}
+\end{split}\]</div>
+<p>(b) Area under curve <span class="math notranslate nohighlight">\(y=x^3 - 3x\)</span> between <span class="math notranslate nohighlight">\(x=-2\)</span> and <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+<p>This is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\int_{-2}^2 (x^3 - 3x) dx  &amp; = \left[ \frac{x^4}{4} - \frac{3 x^2}{2} \right]_{-2}^2 \\ &amp; =  \left(\frac{2^4}{4} - \frac{3 . 2^2}{2}\right)  -  \left(\frac{(-2)^4}{4} - \frac{3 . (-2)^2}{2}\right)   = 0 
+\end{align*}
+\end{split}\]</div>
 </div>
 </div>
 
@@ -507,8 +695,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="mr1_functions.html" title="previous page">Functions, exponential and logarithm rules</a>
-    <a class='right-next' id="next-link" href="mr3_matrices.html" title="next page">Matrices</a>
+    <a class='left-prev' id="prev-link" href="Selected_worked_solutions1.html" title="previous page">Worked solutions - Quiz 1</a>
+    <a class='right-next' id="next-link" href="Selected_worked_solutions3.html" title="next page">Worked solutions - Quiz 3</a>
 
         </div>
         

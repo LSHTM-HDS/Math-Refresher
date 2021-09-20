@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Maths, Probability and Statistics Refresher</title>
+    <title>Maths, Probability and Statistics Refresher &#8212; Maths, Probability and Statistics Refresher</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -49,8 +49,9 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Functions, exponential and logarithm rules" href="mr1_functions.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -81,8 +82,8 @@
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
+ <li class="toctree-l1 current">
+  <a class="reference internal" href="#">
    Maths, Probability and Statistics Refresher
   </a>
  </li>
@@ -314,6 +315,23 @@
             </button>
             
             
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/intro.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
             <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
@@ -325,7 +343,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/LSHTM-HDS/Math-Refresher/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/LSHTM-HDS/Math-Refresher/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -341,11 +359,46 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/LSHTM-HDS/Math-Refresher/main?urlpath=tree/Refresher/intro.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgements">
+   Acknowledgements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#typos-corrections-and-questions">
+   Typos, corrections and questions
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -354,19 +407,59 @@
         
               <div>
                 
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="maths-probability-and-statistics-refresher">
+<h1>Maths, Probability and Statistics Refresher<a class="headerlink" href="#maths-probability-and-statistics-refresher" title="Permalink to this headline">¶</a></h1>
+<p>This document contains a brief refresher on key mathematics, probability and statistics topics. It is intended for the use of students taking the MSc in Health Data Science at the London School of Hygiene and Tropical Medicine.</p>
+<div class="section" id="acknowledgements">
+<h2>Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permalink to this headline">¶</a></h2>
+<p>This document is based on notes created for the MSc in Medical Statistics, London School of Hygiene and Tropical Medicine.</p>
+<p>Many people have contributed to this document over time, including a large number of previous and current members of the Department of Medical Statistics at the London School of Hygiene and Tropical Medicine. In particular, we would like to acknowledge contributions from Ian White who created much of this material, and from Vera Mann, Dan Altmann, John Gregson and Jennifer Rogers.</p>
+</div>
+<div class="section" id="typos-corrections-and-questions">
+<h2>Typos, corrections and questions<a class="headerlink" href="#typos-corrections-and-questions" title="Permalink to this headline">¶</a></h2>
+<p>Inevitably there will be some typos in these notes. Please do let us know any you spot (at: <a class="reference external" href="mailto:mschds&#37;&#52;&#48;lshtm&#46;ac&#46;uk">mailto:mschds<span>&#64;</span>lshtm<span>&#46;</span>ac<span>&#46;</span>uk</a>) and we will correct them.</p>
+<p>In particular, <strong>the “worked solutions” are in beta form</strong>. These have not yet been subjected to proof reading. We are in the process of doing so, but have included them in the meantime in case they are helpful at this stage.</p>
+<p>Note: Latest update and corrections, 20 September 2021. Thanks for all your feedback so far.</p>
+<p>Enjoy!</p>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
         
         <div class='prev-next-bottom'>
             
+    <a class='right-next' id="next-link" href="mr1_functions.html" title="next page">Functions, exponential and logarithm rules</a>
 
         </div>
         
